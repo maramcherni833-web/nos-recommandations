@@ -1,0 +1,75 @@
+/* ===== Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: #f4f5f7;
+  color: #222;
+  line-height: 1.5;
+}
+
+/* ===== En-tête et pied de page ===== */
+.entete {
+  text-align: center;
+  padding: 3rem 1rem 2rem;
+  background: #2d3a8c;
+  color: #fff;
+}
+
+.entete h1 {
+  margin: 0 0 0.5rem;
+}
+
+.pied {
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* ===== Grille de cartes ===== */
+.grille {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.carte {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border-top: 5px solid #999;
+}
+
+.carte h2 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+}
+
+.auteur {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 0;
+}
+
+.etiquette {
+  display: inline-block;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #eee;
+}
+
+/* ===== Couleurs par catégorie ===== */
+.carte[data-categorie="film"]  { border-top-color: #e4572e; }
+.carte[data-categorie="livre"] { border-top-color: #17a2b8; }
+.carte[data-categorie="serie"] { border-top-color: #8e44ad; }
+.carte[data-categorie="resto"] { border-top-color: #f39c12; }
